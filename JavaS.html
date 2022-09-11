@@ -7,6 +7,8 @@
 <p id = 'obj'> </p>
 <script>
 
+// This how you define an object
+// An object is called using '.' operator
 const student = {
 fname:'Pramod',
 lname:'Joshi',
@@ -16,27 +18,35 @@ fullName : function() {
 rno:'228043',
 class:'FYCS'};
 
+//  This how to define a variable 
 let x,y;
 x = 5;
 y = 5.6;
 let z = x+y;
 
+// .getElementById display the data in the tag with given id
 // id should be different for differemt getElementById
 
 document.getElementById("demo").innerHTML = 5*5;
+
+// .write is used for testing
 document.write(5*2);
 
+// display spam in alert
 window.alert('Spam!!!');
 
 document.getElementById('demo2').innerHTML = 'The value of z : ' + z;
 
 console.log("?");
 
+// function
 function f1(a,b){
 	return (a**2) + (b**2); 
 }
 document.getElementById('demo2').innerHTML = f1(4,6);
-document.getElementById('obj').innerHTML = student.fullName();
+
+// this is how to call an object
+document.getElementById('obj').innerHTML = student.fname;
 </script>
 <br>
 <p id = "scam"> </p>
