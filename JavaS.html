@@ -1,0 +1,45 @@
+<!Doctype HTML>
+<html>
+<body>
+<h2> JavaScript in Body </h2>
+<p id = "demo"> </p>
+<p id = 'demo2'> </p>
+<p id = 'obj'> </p>
+<script>
+
+const student = {
+fname:'Pramod',
+lname:'Joshi',
+fullName : function() {
+    return this.fname + " " + this.lname;
+  },
+rno:'228043',
+class:'FYCS'};
+
+let x,y;
+x = 5;
+y = 5.6;
+let z = x+y;
+
+// id should be different for differemt getElementById
+
+document.getElementById("demo").innerHTML = 5*5;
+document.write(5*2);
+
+window.alert('Spam!!!');
+
+document.getElementById('demo2').innerHTML = 'The value of z : ' + z;
+
+console.log("?");
+
+function f1(a,b){
+	return (a**2) + (b**2); 
+}
+document.getElementById('demo2').innerHTML = f1(4,6);
+document.getElementById('obj').innerHTML = student.fullName();
+</script>
+<br>
+<p id = "scam"> </p>
+<button type="button" onclick = "document.getElementById('scam').innerHTML = 'Hahaha, Got You!'"> Push to get 1000$ </button>
+</body>
+</html>
