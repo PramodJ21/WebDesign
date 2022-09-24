@@ -4,15 +4,17 @@
 
 <p id = 'demo1'></p>
 <p id = 'demo2'></p>
+<p id = 'demo3'></p>
 <script>
 
 let c1 = 'I hate';
 let c2 = 'studying.';
+let str = 'Apple, Banana, Kiwi';
+let text = 'ABCDEFGHIJKLMNOPQ RSTUVWXYZ';
 
 document.getElementById('demo1').innerHTML = c1 + ' ' + c2;
-
-let text = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-document.getElementById('demo2').innerHTML = text.length
+document.getElementById('demo3').innerHTML = str.slice(7,13);
+document.getElementById('demo2').innerHTML = text.length;
 </script>
 
 
