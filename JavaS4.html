@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id = 'demo'></p>
+<p id = 'demo1'></p>
+<script>
+const hour = new Date().getHours();
+let greeting,day;
+
+if (6 < hour < 12 ) 
+{greeting =  "Good Morning! " + hour;}
+
+else if(12 < hour < 18 ) 
+{greeting = "Good Afternoon!";}
+
+else if(18 < hour < 23 )
+{greeting = "Good Evening!";}
+
+else {greeting = "Good Night!";}
+
+document.getElementById('demo').innerHTML = greeting;
+
+switch(new Date().getDay()){
+
+	case 0:
+		day = 'Its Sunday!';
+		break;
+
+	case 1:
+		day = 'Its Monday';
+		break;
+
+	case 2:
+		day = 'Its Tuesday';
+		break;
+
+	case 3:
+		day = 'Its Wednesday';
+		break;
+
+	case 4:
+		day = 'Its Thursday';
+		break;
+
+	case 5:
+		day = 'Its Friday';
+		break;
+
+	case 6:
+		day = 'Its Saturday!';
+		
+}
+
+document.getElementById('demo1').innerHTML = day;
+</script>
+</body>
+</html>
